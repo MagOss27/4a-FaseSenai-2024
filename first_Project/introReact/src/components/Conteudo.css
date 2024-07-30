@@ -1,0 +1,4 @@
+.conteudo-container {
+    background-color: var(--cor-3);
+    height: calc(100vh - 60px);
+}
