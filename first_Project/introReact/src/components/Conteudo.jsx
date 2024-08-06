@@ -1,4 +1,3 @@
-import React from "react";
 import './Conteudo.css';
 
 function Conteudo() {

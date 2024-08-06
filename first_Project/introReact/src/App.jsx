@@ -1,16 +1,16 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Conteudo from './components/Conteudo';
+//importação dos componentes
+import Home from './pages/Home';
+
 
 function App() {
 
   return (
-    <>
-      <Navbar />
-      <Conteudo />
-
-    </>
+    <div className='app-container'>
+      <Home />
+    </div>
   )
 }
 
-export default App
+export default App;
+
