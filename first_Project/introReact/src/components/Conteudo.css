@@ -1,4 +1,13 @@
 .conteudo-container {
     background-color: var(--cor-3);
     height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.imagem-conteudo{
+    width: 100px;
+    border-radius: 10px;
+}
+
