@@ -1,0 +1,73 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.divHeaderCima {
+  height: 30%;
+  background-color: #ef97e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divHeaderMeio {
+  height: 45%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.divHeaderBaixo {
+  height: 25%;
+  background-color: #FFC107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+  max-width: 300px;
+}
+
+button {
+  border: none;
+  color: #ce1f3a;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 25px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px; /* Espaço entre o ícone e o texto */
+}
+
+button:last-of-type {
+  color: black;
+}
+
+button i {
+  font-size: 16px; /* Ajusta o tamanho do ícone */
+}
