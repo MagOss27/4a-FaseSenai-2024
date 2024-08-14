@@ -1,73 +1,110 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
+/* Define que o `html` e `body` ocupem 100% da altura da tela e remove as margens */
 html, body, #root {
   height: 100%;
   margin: 0;
 }
 
+/* Define o `body` como um contêiner flexível com orientação em coluna */
 body {
   display: flex;
   flex-direction: column;
 }
 
+/* Define o `header` para ocupar 30% da altura da tela */
 header {
-  height: 25%;
+  height: 30%;
   display: flex;
   flex-direction: column;
 }
 
+/* Estilização das divisões dentro do header */
 .divHeaderCima {
   height: 30%;
-  background-color: #ef97e4;
+  background-color: #ef97a4;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
 }
 
 .divHeaderMeio {
-  height: 45%;
-  background-color: #ffffff;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 0 20px;
-  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+}
+
+.divHeaderMeio img.logo {
+  height: 70px; /* Aumenta o tamanho da logo */
+}
+
+.divHeaderMeio .search-input {
+  flex-grow: 1;
+  margin: 0 15px; /* Ajuste do espaço ao redor do input */
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px; /* Tamanho da fonte do input reduzido */
+  text-align: center; /* Centraliza o texto dentro do input */
+}
+
+.divHeaderMeio button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  background-color: #ef97a4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Tamanho da fonte do botão reduzido */
+}
+
+.divHeaderMeio button:hover {
+  background-color: #e23e57;
 }
 
 .divHeaderBaixo {
   height: 25%;
-  background-color: #FFC107;
+  background-color: #e23e57;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap; /* Permite que os botões se movam para a linha seguinte se necessário */
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  align-items: center; /* Alinha os botões no centro verticalmente */
+  padding: 10px 20px; /* Adiciona padding nas laterais para espaçamento */
+  gap: 3px;
 }
 
-input[type='text'] {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  flex: 1;
-  max-width: 300px;
-}
-
-button {
-  border: none;
-  color: #ce1f3a;
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+.divHeaderBaixo button {
+  background-color: #e23e57; /* Cor de fundo */
+  color: #ffffff; /* Cor do texto */
+  border: 2px solid #e23e57; /* Borda na mesma cor do fundo */
+  border-radius: 4px;
+  padding: 8px 12px; /* Tamanho dos botões */
+  font-size: 16px; /* Aumenta o tamanho da fonte */
   cursor: pointer;
-  margin: 0 25px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 7px; /* Espaço entre o ícone e o texto */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
 }
 
-button:last-of-type {
-  color: black;
+.divHeaderBaixo button:hover {
+  background-color: #e23e57; /* Cor de fundo ao passar o mouse */
+  color: #ffffff; /* Cor do texto ao passar o mouse */
 }
 
-button i {
-  font-size: 16px; /* Ajusta o tamanho do ícone */
+/* Estilo da logo */
+.logo {
+  max-height: 100%; /* Garante que a logo ocupe a altura total da divHeaderMeio */
+  max-width: 100%;  /* Garante que a logo não ultrapasse os limites da div */
+  object-fit: contain; /* Ajusta a imagem para que ela se encaixe dentro da div sem distorção */
+}
+
+.mainCima{
+  height: 70%;
+  overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder a altura */
+  background-color:  #e6e6e6;
 }
