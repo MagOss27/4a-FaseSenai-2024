@@ -27,14 +27,14 @@ function Header() {
         <button><i className="fas fa-user"></i> Entre ou Cadastre-se</button>
       </div>
       <div className="divHeaderBaixo">
-        <button> <i className='fa-solid fa-bars'></i> Todas as Categorias</button>
-        <button>Medicamentos</button>
-        <button>Dormocosméticos</button>
-        <button>Mamãe e Bebês</button>
-        <button>Higiene Pessoal</button>
-        <button>Serviços e Vacinas</button>
-        <button>Conveniência</button>
-        <button>Ofertas</button>
+        <button className='buttonHeaderBaixo'> <i className='fa-solid fa-bars'></i> Todas as Categorias</button>
+        <button className='buttonHeaderBaixo'>Medicamentos</button>
+        <button className='buttonHeaderBaixo'>Dormocosméticos</button>
+        <button className='buttonHeaderBaixo'>Mamãe e Bebês</button>
+        <button className='buttonHeaderBaixo'>Higiene Pessoal</button>
+        <button className='buttonHeaderBaixo'>Serviços e Vacinas</button>
+        <button className='buttonHeaderBaixo'>Conveniência</button>
+        <button className='buttonHeaderBaixo'>Ofertas</button>
       </div>
     </header>
   );
@@ -43,29 +43,32 @@ function Header() {
 function Body() {
   return (
     <main className='mainCima'>
+      <div className="cimaTexto">
+        <div className="imageFarmacia">
+          <img src="./images/imagemGrande.png" alt="ImagemProjeto" />
+        </div>
+        <div>
+        Esta é a nova identidade visual da farmácia, agora renomeada para "Farmárcia". Após a decisão de meu tio Mário de mudar de ramo e vender sua farmácia para investir em armários aéreos, a farmácia passou por uma reformulação completa. A nova marca reflete um compromisso renovado com o bem-estar e a saúde da comunidade.        </div>
+      </div>
 
-<div>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget eros imperdiet, consectetur eros et, eleifend leo. Suspendisse ligula sapien, suscipit eu consectetur cursus, blandit eu ligula. Vivamus sodales risus aliquam mauris volutpat fermentum. Ut scelerisque dui in elit varius ornare. Vivamus a enim leo. Donec quam nulla, pellentesque quis iaculis vel, efficitur id lacus. Phasellus metus risus, iaculis viverra facilisis quis, blandit et quam. In quis ligula ac dolor placerat consectetur sed in sem. Cras quis sollicitudin enim, id imperdiet nisl. Praesent vulputate venenatis mauris eu tincidunt. Duis ac gravida turpis.
+      <div className="meioTexto">
+        <div className="imageFarmacia">
+          <img src="./images/farmarciaPlaca.png" alt="ImagemProjeto" />
+        </div>
+        <div>
+        A placa da nova "Farmárcia" não apenas anuncia a mudança de direção e o novo nome, mas também simboliza a expansão do legado familiar. Com a abertura de 30 novas lojas em diferentes bairros, a "Farmárcia" mantém a essência de cuidado e tradição herdada da antiga farmácia do tio Mário. Cada loja foi cuidadosamente planejada para atender as necessidades da comunidade local, garantindo que todos os clientes, antigos e novos, se sintam bem-vindos.</div>
+      </div>
 
-Suspendisse at pellentesque justo, et dignissim libero. Praesent convallis vulputate ante quis interdum. Fusce accumsan sodales volutpat. Phasellus sit amet nulla in velit tempor vehicula. Donec faucibus massa in magna tristique mollis. Donec a tempor quam, id fringilla erat. Proin condimentum eros vel tellus feugiat, sit amet volutpat quam lacinia. Cras eleifend sapien vel odio faucibus, a porttitor velit commodo.
-
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec rhoncus ut libero a sagittis. Pellentesque sit amet posuere risus. Donec quis elementum sapien. Phasellus vehicula nunc sed fringilla iaculis. Phasellus ut enim a justo malesuada fringilla. Ut congue a quam eget ornare. Fusce id finibus nunc. Vivamus ullamcorper maximus augue, at viverra ex malesuada ut. Curabitur luctus erat ac elementum bibendum. Nunc tempus a nisl eget congue.</div>
-
-
-<div>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget eros imperdiet, consectetur eros et, eleifend leo. Suspendisse ligula sapien, suscipit eu consectetur cursus, blandit eu ligula. Vivamus sodales risus aliquam mauris volutpat fermentum. Ut scelerisque dui in elit varius ornare. Vivamus a enim leo. Donec quam nulla, pellentesque quis iaculis vel, efficitur id lacus. Phasellus metus risus, iaculis viverra facilisis quis, blandit et quam. In quis ligula ac dolor placerat consectetur sed in sem. Cras quis sollicitudin enim, id imperdiet nisl. Praesent vulputate venenatis mauris eu tincidunt. Duis ac gravida turpis.
-
-Suspendisse at pellentesque justo, et dignissim libero. Praesent convallis vulputate ante quis interdum. Fusce accumsan sodales volutpat. Phasellus sit amet nulla in velit tempor vehicula. Donec faucibus massa in magna tristique mollis. Donec a tempor quam, id fringilla erat. Proin condimentum eros vel tellus feugiat, sit amet volutpat quam lacinia. Cras eleifend sapien vel odio faucibus, a porttitor velit commodo.
-
-Orci varius n
-
-<div>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget eros imperdiet, consectetur eros et, eleifend leo. Suspendisse ligula sapien, suscipit eu consectetur cursus, blandit eu ligula. Vivamus sodales risus aliquam mauris volutpat fermentum. Ut scelerisque dui in elit varius ornare. Vivamus a enim leo. Donec quam nulla, pellentesque quis iaculis vel, efficitur id lacus. Phasellus metus risus, iaculis viverra facilisis quis, blandit et quam. In quis ligula ac dolor placerat consectetur sed in sem. Cras quis sollicitudin enim, id imperdiet nisl. Praesent vulputate venenatis mauris eu tincidunt. Duis ac gravida turpis.
-
-Suspendisse at pellentesque justo, et dignissim libero. Praesent convallis vulputate ante quis interdum. Fusce accumsan sodales volutpat. Phasellus sit amet nulla in velit tempor vehicula. Donec faucibus massa in magna tristique mollis. Donec a tempor quam, id fringilla erat. Proin condimentum eros vel tellus feugiat, sit amet volutpat quam lacinia. Cras eleifend sapien vel odio faucibus, a porttitor velit commodo.
-
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec rhoncus ut libero a sagittis. Pellentesque sit amet posuere risus. Donec quis elementum sapien. Phasellus vehicula nunc sed fringilla iaculis. Phasellus ut enim a justo malesuada fringilla. Ut congue a quam eget ornare. Fusce id finibus nunc. Vivamus ullamcorper maximus augue, at viverra ex malesuada ut. Curabitur luctus erat ac elementum bibendum. Nunc tempus a nisl eget congue.</div>
-atoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec rhoncus ut libero a sagittis. Pellentesque sit amet posuere risus. Donec quis elementum sapien. Phasellus vehicula nunc sed fringilla iaculis. Phasellus ut enim a justo malesuada fringilla. Ut congue a quam eget ornare. Fusce id finibus nunc. Vivamus ullamcorper maximus augue, at viverra ex malesuada ut. Curabitur luctus erat ac elementum bibendum. Nunc tempus a nisl eget congue.</div>
+      <div className="baixoTexto">
+        <div className="imageFarmacia">
+          <img src="./images/farmarciaCamiseta.png" alt="ImagemProjeto" />
+        </div>
+        <div>
+        A camiseta personalizada com a nova logomarca da "Farmárcia" representa o compromisso da farmácia com a nova identidade e a proximidade com a comunidade. Esta imagem reflete o esforço para manter a farmácia moderna, acessível e próxima de seus clientes, mesmo com a mudança de direção.        </div>
+      </div>
+      <button className='buttonWhats' onClick={() => window.location.href = 'https://www.linkedin.com/in/magnus-oss-6b018a297/'}>
+  <img src="./images/whatsImagem.jfif" alt="WhatsApp"  />
+</button>
 
     </main>
   );
