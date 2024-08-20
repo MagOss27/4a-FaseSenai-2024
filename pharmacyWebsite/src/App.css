@@ -155,6 +155,7 @@ header {
 .imageFarmacia img {
   max-width: 100%;
   height: auto;
+ background-color: #e23e57;
   /* Para garantir que a imagem seja redimensionada corretamente */
 }
 

@@ -1,15 +1,15 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-import TelaAtendimento from './TelaAtendimento'; // Importe a nova tela
+import TelaAtendimento from './TelaAtendimento';
 
 function App() {
   return (
     <Router>
-    <Routes>
-      <Route path="/" element={<DesignTelaFarmacia />} />
-      <Route path="/retirar-senha" element={<TelaAtendimento />} />
-    </Routes>
-  </Router>
+      <Routes>
+        <Route path="/" element={<DesignTelaFarmacia />} />
+        <Route path="/retirar-senha" element={<TelaAtendimento />} />
+      </Routes>
+    </Router>
   );
 }
 
@@ -24,8 +24,8 @@ function DesignTelaFarmacia() {
 }
 
 function Header() {
-  //instalar npm install react-router-dom para a navegação de tela
 
+  //instalar npm install react-router-dom para a navegação de tela
   const navigate = useNavigate();
   return (
     <header>
@@ -63,7 +63,7 @@ function Body() {
     <main className='mainCima'>
       <div className="cimaTexto">
         <div className="imageFarmacia">
-          <img src="./images/imagemGrande.png" alt="ImagemProjeto" />
+            <img src="./images/imagemGrande.png" alt="ImagemProjeto" />
         </div>
         <div>
           Esta é a nova identidade visual da farmácia, agora renomeada para "Farmárcia". Após a decisão de meu tio Mário de mudar de ramo e vender sua farmácia para investir em armários aéreos, a farmácia passou por uma reformulação completa. A nova marca reflete um compromisso renovado com o bem-estar e a saúde da comunidade.        </div>
