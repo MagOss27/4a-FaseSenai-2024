@@ -1,13 +1,13 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-import TelaAtendimento from './TelaAtendimento';
+import TelaAtendimento from './TelaAtendimento'; // Importa TelaAtendimento
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<DesignTelaFarmacia />} />
-        <Route path="/retirar-senha" element={<TelaAtendimento />} />
+        <Route path="/" element={<DesignTelaFarmacia />} />  
+        <Route path="/retirar-senha" element={<TelaAtendimento />} /> {/* Nova rota */}
       </Routes>
     </Router>
   );

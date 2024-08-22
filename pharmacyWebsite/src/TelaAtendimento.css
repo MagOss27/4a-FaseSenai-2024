@@ -12,17 +12,19 @@ body,
 body {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* Define o `header` para ocupar 30% da altura da tela */
-header {
+.headerAtendimento {
   height: 30%;
   display: flex;
   flex-direction: column;
+
 }
 
 /* Estilização das divisões dentro do header */
-.divHeaderCima {
+.divHeaderCimaAtendimento {
   height: 30%;
   background-color: #ef97a4;
   color: white;
@@ -34,57 +36,49 @@ header {
   text-align: center;
 }
 
-.divHeaderMeio{
+.textoHeaderMeioAtendimento{
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+.divHeaderMeioAtendimento {
   display: flex;
-  background-color: rgb(158, 158, 221);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
 }
 
-.textoHeaderMeio{
-  font-size: 40px;
+.imagemLogoAtendimento .logoAtendimento {
+  height: 70px;
+  /* Aumenta o tamanho da logo */
+}
+
+.divHeaderMeioAtendimento button {
+  padding: 8px 12px;
+  background-color: #ef97a4;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-.divHeaderBaixo {
+.divHeaderMeioAtendimento button:hover {
+  background-color: #e23e57;
+}
+
+.divHeaderBaixoAtendimento {
   height: 25%;
   background-color: #e23e57;
   display: flex;
   flex-wrap: wrap;
-  /* Permite que os botões se movam para a linha seguinte se necessário */
   justify-content: center;
-  /* Centraliza os botões horizontalmente */
   align-items: center;
-  /* Alinha os botões no centro verticalmente */
   padding: 10px 20px;
-  /* Adiciona padding nas laterais para espaçamento */
   gap: 3px;
 }
 
-.divHeaderBaixo button {
-  background-color: #e23e57;
-  /* Cor de fundo */
-  color: #ffffff;
-  /* Cor do texto */
-  border: 2px solid #e23e57;
-  /* Borda na mesma cor do fundo */
-  border-radius: 4px;
-  padding: 8px 12px;
-  /* Tamanho dos botões */
-  font-size: 16px;
-  /* Aumenta o tamanho da fonte */
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  /* Transição suave para hover */
-}
-
-.divHeaderBaixo button:hover {
-  background-color: #e23e57;
-  /* Cor de fundo ao passar o mouse */
-  color: #ffffff;
-  /* Cor do texto ao passar o mouse */
-}
-
-/* Estilo para os botões dentro da divHeaderBaixo */
-.buttonHeaderBaixo {
+.buttonHeaderBaixoAtendimento {
   background-color: #e23e57;
   color: #ffffff;
   border: 2px solid #e23e57;
@@ -93,27 +87,89 @@ header {
   font-size: 16px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Transição suave para o efeito de aumento e sombra */
 }
 
-.buttonHeaderBaixo:hover {
+.buttonHeaderBaixoAtendimento:hover {
   transform: scale(1.1);
-  /* Aumenta o botão em 10% ao passar o mouse */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  /* Aumenta a sombra ao passar o mouse para um efeito mais destacado */
 }
 
-.mainCima {
+/* Estilo da logo */
+.logoAtendimento {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.mainCimaAtendimento {
+  display: flex;
   height: 70%;
-  overflow-y: auto;
-  /* Adiciona rolagem vertical se o conteúdo exceder a altura */
   background-color: #e6e6e6;
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px; /* Espaçamento entre a imagem e o conteúdo */
+}
+
+.image-lateral {
+  max-width: 100%;
+  height: 90%; /* Ajusta a altura da imagem para ocupar 100% da altura do contêiner */
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+
+.content-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  text-align: center; /* Centraliza o texto dentro dos itens */
+}
+.button-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  margin-bottom: 20px; /* Espaço abaixo dos botões */
 }
 
 
+.buttonBody {
+  padding: 8px 12px; /* Reduz o padding dos botões */
+  background-color: #ef97a4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px; /* Reduz o tamanho da fonte dos botões */
+  max-width: 150px; /* Ajusta a largura máxima dos botões conforme necessário */
+  flex: 1; /* Faz com que os botões ocupem o mesmo espaço disponível */
+}
+
+.buttonBody:hover {
+  background-color: #e23e57;
+}
 
 
+#display-senha {
+  margin: 20px 0; /* Espaço acima e abaixo do texto da senha */
+  font-size: 20px; /* Ajusta o tamanho da fonte do texto da senha */
+}
 
+ul {
+  list-style-type: none; /* Remove os marcadores das listas */
+  padding: 0;
+  margin: 10px 0; /* Espaço acima e abaixo das listas */
+}
 
-
-
+ul li {
+  margin: 5px 0; /* Espaço entre os itens das listas */
+  font-size: 18px; /* Ajusta o tamanho da fonte dos itens das listas */
+}
