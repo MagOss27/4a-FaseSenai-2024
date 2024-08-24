@@ -1,6 +1,7 @@
+/* Importa a biblioteca de ícones Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
-/* Define que o `html` e `body` ocupem 100% da altura da tela e remove as margens */
+/* Define que o `html`, `body` e `#root` ocupem 100% da altura da tela e remove as margens */
 html,
 body,
 #root {
@@ -12,7 +13,7 @@ body,
 body {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: hidden; /* Impede que o conteúdo transborde */
 }
 
 /* Define o `header` para ocupar 30% da altura da tela */
@@ -20,131 +21,143 @@ body {
   height: 30%;
   display: flex;
   flex-direction: column;
-
 }
 
-/* Estilização das divisões dentro do header */
+/* Estilização da parte superior do header */
 .divHeaderCimaAtendimento {
-  height: 30%;
-  background-color: #ef97a4;
-  color: white;
+  height: 30%; /* Ocupa 30% da altura do header */
+  background-color: #ef97a4; /* Cor de fundo rosa */
+  color: white; /* Texto branco */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
 }
 
-.textoHeaderMeioAtendimento{
+/* Estilização do texto central no meio do header */
+.textoHeaderMeioAtendimento {
   font-size: 35px;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0); /* Texto preto */
 }
+
+/* Estilização da parte do meio do header */
 .divHeaderMeioAtendimento {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #ffffff;
+  background-color: #ffffff; /* Fundo branco */
 }
 
+/* Estilização da logo dentro do header */
 .imagemLogoAtendimento .logoAtendimento {
-  height: 70px;
-  /* Aumenta o tamanho da logo */
+  height: 70px; /* Altura da logo */
 }
 
+/* Estilização dos botões no meio do header */
 .divHeaderMeioAtendimento button {
   padding: 8px 12px;
-  background-color: #ef97a4;
-  color: white;
+  background-color: #ef97a4; /* Cor de fundo rosa */
+  color: white; /* Texto branco */
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
 }
 
+/* Efeito hover nos botões do meio do header */
 .divHeaderMeioAtendimento button:hover {
-  background-color: #e23e57;
+  background-color: #e23e57; /* Muda a cor de fundo ao passar o mouse */
 }
 
+/* Estilização da parte inferior do header */
 .divHeaderBaixoAtendimento {
-  height: 25%;
-  background-color: #e23e57;
+  height: 25%; /* Ocupa 25% da altura do header */
+  background-color: #e23e57; /* Cor de fundo vermelha */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  gap: 3px;
+  gap: 3px; /* Espaçamento entre os botões */
 }
 
+/* Estilização dos botões na parte inferior do header */
 .buttonHeaderBaixoAtendimento {
-  background-color: #e23e57;
-  color: #ffffff;
-  border: 2px solid #e23e57;
+  background-color: #e23e57; /* Cor de fundo vermelha */
+  color: #ffffff; /* Texto branco */
+  border: 2px solid #e23e57; /* Borda vermelha */
   border-radius: 4px;
   padding: 8px 12px;
   font-size: 16px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
 }
 
+/* Efeito hover nos botões da parte inferior do header */
 .buttonHeaderBaixoAtendimento:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao botão */
 }
 
-/* Estilo da logo */
+/* Estilo da logo para garantir que se ajuste ao contêiner */
 .logoAtendimento {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
 }
 
+/* Estilização do `main`, que ocupa o restante da tela (70%) */
 .mainCimaAtendimento {
   display: flex;
   height: 70%;
-  background-color: #e6e6e6;
+  background-color: #e6e6e6; /* Cor de fundo cinza claro */
   padding-left: 10px;
   padding-top: 10px;
-
 }
 
+/* Contêiner da imagem lateral */
 .image-container {
-  flex: 1;
+  flex: 1; /* Ocupa uma parte do espaço disponível */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 20px; /* Espaçamento entre a imagem e o conteúdo */
 }
 
+/* Estilização da imagem lateral */
 .image-lateral {
   max-width: 100%;
-  height: 90%; /* Ajusta a altura da imagem para ocupar 100% da altura do contêiner */
+  height: 90%; /* Ajusta a altura da imagem */
   object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
 }
 
+/* Contêiner do conteúdo principal */
 .content-container {
-  flex: 2;
+  flex: 2; /* Ocupa duas partes do espaço disponível */
   display: flex;
   flex-direction: column;
   align-items: center; /* Centraliza os itens horizontalmente */
   justify-content: center; /* Centraliza os itens verticalmente */
   text-align: center; /* Centraliza o texto dentro dos itens */
 }
+
+/* Estilização do contêiner dos botões no corpo */
 .button-container {
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+  gap: 10px; /* Espaçamento entre os botões */
+  flex-wrap: wrap; /* Permite que os botões se ajustem ao espaço disponível */
   justify-content: center; /* Centraliza os botões horizontalmente */
   margin-bottom: 20px; /* Espaço abaixo dos botões */
 }
 
-
+/* Estilização dos botões no corpo */
 .buttonBody {
   padding: 8px 12px; /* Reduz o padding dos botões */
-  background-color: #ef97a4;
-  color: white;
+  background-color: #ef97a4; /* Cor de fundo rosa */
+  color: white; /* Texto branco */
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -153,23 +166,33 @@ body {
   flex: 1; /* Faz com que os botões ocupem o mesmo espaço disponível */
 }
 
+/* Efeito hover nos botões do corpo */
 .buttonBody:hover {
-  background-color: #e23e57;
+  background-color: #e23e57; /* Muda a cor de fundo ao passar o mouse */
 }
 
-
+/* Estilização da exibição da senha chamada */
 #display-senha {
   margin: 20px 0; /* Espaço acima e abaixo do texto da senha */
   font-size: 20px; /* Ajusta o tamanho da fonte do texto da senha */
 }
 
+/* Remove os marcadores das listas */
 ul {
-  list-style-type: none; /* Remove os marcadores das listas */
+  list-style-type: none;
   padding: 0;
   margin: 10px 0; /* Espaço acima e abaixo das listas */
 }
 
+/* Estilização dos itens da lista de senhas */
 ul li {
   margin: 5px 0; /* Espaço entre os itens das listas */
   font-size: 18px; /* Ajusta o tamanho da fonte dos itens das listas */
+}
+
+.filaVazia {
+  color: red; /* Escolha a cor que deseja, aqui está o exemplo com vermelho */
+  font-weight: bold;
+  font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+  text-align: center; /* Centraliza o texto */
 }

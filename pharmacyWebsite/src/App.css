@@ -1,6 +1,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
-/* Define que o `html` e `body` ocupem 100% da altura da tela e remove as margens */
+/* Define que o `html`, `body` e o elemento raiz `#root` ocupem 100% da altura da tela e removem as margens */
 html,
 body,
 #root {
@@ -8,20 +8,20 @@ body,
   margin: 0;
 }
 
-/* Define o `body` como um contêiner flexível com orientação em coluna */
+/* Define o `body` como um contêiner flexível com orientação em coluna, garantindo que os elementos filhos sejam organizados de cima para baixo */
 body {
   display: flex;
   flex-direction: column;
 }
 
-/* Define o `header` para ocupar 30% da altura da tela */
+/* Define o `header` para ocupar 30% da altura total da tela e organiza seus elementos em coluna */
 header {
   height: 30%;
   display: flex;
   flex-direction: column;
 }
 
-/* Estilização das divisões dentro do header */
+/* Estiliza a divisão superior do header, centralizando o texto e definindo a cor de fundo e do texto */
 .divHeaderCima {
   height: 30%;
   background-color: #ef97a4;
@@ -34,6 +34,7 @@ header {
   text-align: center;
 }
 
+/* Estiliza a divisão do meio do header, ajustando o espaçamento e alinhando os itens */
 .divHeaderMeio {
   display: flex;
   align-items: center;
@@ -42,24 +43,23 @@ header {
   background-color: #ffffff;
 }
 
+/* Ajusta a altura da logo dentro da divisão do meio do header */
 .divHeaderMeio img.logo {
   height: 70px;
-  /* Aumenta o tamanho da logo */
 }
 
+/* Estiliza o campo de busca, permitindo que ele cresça para preencher o espaço disponível */
 .divHeaderMeio .search-input {
   flex-grow: 1;
   margin: 0 15px;
-  /* Ajuste do espaço ao redor do input */
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 14px;
-  /* Tamanho da fonte do input reduzido */
   text-align: center;
-  /* Centraliza o texto dentro do input */
 }
 
+/* Estiliza os botões dentro da divisão do meio do header */
 .divHeaderMeio button {
   margin-left: 8px;
   padding: 8px 12px;
@@ -69,53 +69,44 @@ header {
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
-  /* Tamanho da fonte do botão reduzido */
 }
 
+/* Define a cor de fundo dos botões ao passar o mouse */
 .divHeaderMeio button:hover {
   background-color: #e23e57;
 }
 
+/* Estiliza a divisão inferior do header, centralizando e organizando os botões */
 .divHeaderBaixo {
   height: 25%;
   background-color: #e23e57;
   display: flex;
   flex-wrap: wrap;
-  /* Permite que os botões se movam para a linha seguinte se necessário */
   justify-content: center;
-  /* Centraliza os botões horizontalmente */
   align-items: center;
-  /* Alinha os botões no centro verticalmente */
   padding: 10px 20px;
-  /* Adiciona padding nas laterais para espaçamento */
   gap: 3px;
 }
 
+/* Estiliza os botões dentro da divisão inferior do header */
 .divHeaderBaixo button {
   background-color: #e23e57;
-  /* Cor de fundo */
   color: #ffffff;
-  /* Cor do texto */
   border: 2px solid #e23e57;
-  /* Borda na mesma cor do fundo */
   border-radius: 4px;
   padding: 8px 12px;
-  /* Tamanho dos botões */
   font-size: 16px;
-  /* Aumenta o tamanho da fonte */
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  /* Transição suave para hover */
 }
 
+/* Define o estilo de hover para os botões da divisão inferior do header */
 .divHeaderBaixo button:hover {
   background-color: #e23e57;
-  /* Cor de fundo ao passar o mouse */
   color: #ffffff;
-  /* Cor do texto ao passar o mouse */
 }
 
-/* Estilo para os botões dentro da divHeaderBaixo */
+/* Estilo para os botões específicos dentro da divHeaderBaixo, incluindo transições para hover */
 .buttonHeaderBaixo {
   background-color: #e23e57;
   color: #ffffff;
@@ -125,46 +116,42 @@ header {
   font-size: 16px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Transição suave para o efeito de aumento e sombra */
 }
 
+/* Aumenta o botão em 10% e adiciona sombra ao passar o mouse */
 .buttonHeaderBaixo:hover {
   transform: scale(1.1);
-  /* Aumenta o botão em 10% ao passar o mouse */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  /* Aumenta a sombra ao passar o mouse para um efeito mais destacado */
 }
 
-/* Estilo da logo */
+/* Estilo da logo para garantir que a imagem seja redimensionada corretamente dentro da div */
 .logo {
   max-height: 100%;
-  /* Garante que a logo ocupe a altura total da divHeaderMeio */
   max-width: 100%;
-  /* Garante que a logo não ultrapasse os limites da div */
   object-fit: contain;
-  /* Ajusta a imagem para que ela se encaixe dentro da div sem distorção */
 }
 
+/* Define o `main` como ocupando 70% da altura da tela e permite rolagem vertical */
 .mainCima {
   height: 70%;
   overflow-y: auto;
-  /* Adiciona rolagem vertical se o conteúdo exceder a altura */
   background-color: #e6e6e6;
 }
 
+/* Estiliza as imagens dentro da seção do `Body`, garantindo que sejam redimensionadas corretamente */
 .imageFarmacia img {
   max-width: 100%;
   height: auto;
- background-color: #e23e57;
-  /* Para garantir que a imagem seja redimensionada corretamente */
+  background-color: #e23e57;
 }
 
+/* Define a largura das imagens dentro da seção do `Body` */
 .imageFarmacia {
   width: 60%;
-  /* Aumenta a largura da imagem para 60% */
   padding: 20px;
 }
 
+/* Estiliza as seções de texto no `Body`, centralizando os itens e definindo o espaçamento */
 .cimaTexto, .meioTexto, .baixoTexto {
   display: flex;
   align-items: center;
@@ -173,50 +160,48 @@ header {
   color: #333;
   line-height: 1.6;
   font-family: 'Times New Roman', Times, serif;
-
 }
 
+/* Define a orientação do conteúdo na primeira seção do `Body` */
 .cimaTexto {
   flex-direction: row;
-  /* Texto à direita da imagem */
 }
 
+/* Define a orientação do conteúdo na segunda seção do `Body` */
 .meioTexto {
   flex-direction: row-reverse;
-  /* Texto à esquerda da imagem */
 }
 
+/* Define a orientação do conteúdo na terceira seção do `Body` */
 .baixoTexto {
   flex-direction: row;
-  /* Texto à direita da imagem */
 }
 
-/* Estilo para o botão do WhatsApp */
+/* Estiliza o botão de WhatsApp fixo no canto inferior direito da tela */
 .buttonWhats {
   position: fixed;
-  right: 20px; /* Ajuste conforme necessário para o espaçamento do lado direito */
-  bottom: 20px; /* Ajuste conforme necessário para o espaçamento do fundo */
-  background-color: #ffffff; /* Cor do botão do WhatsApp */
+  right: 20px;
+  bottom: 20px;
+  background-color: #ffffff;
   border: none;
   border-radius: 50%;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+  z-index: 1000;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Transição suave para o efeito de aumento e sombra */
-  transform-origin: center; /* Define o ponto de origem da transformação para o centro */
+  transform-origin: center;
 }
 
+/* Aumenta o botão de WhatsApp em 10% e adiciona sombra ao passar o mouse */
 .buttonWhats:hover {
   transform: scale(1.1);
-  /* Aumenta o botão em 10% ao passar o mouse */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  /* Aumenta a sombra ao passar o mouse para um efeito mais destacado */
 }
 
+/* Define o tamanho da imagem dentro do botão de WhatsApp */
 .buttonWhats img {
-  width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  width: 50px;
   height: auto;
 }
 
