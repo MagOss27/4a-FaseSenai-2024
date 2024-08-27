@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -17,21 +15,27 @@ function App() {
   }
 
   function cadastrarUsuario() {
-    console.log(inputNome)
-    console.log(inputIdade)
+
+    // console.log(inputNome)
+    // console.log(inputIdade)
+
     let usuario = {
+      id: Date.now(),
       nome: inputNome,
       idade: inputIdade
     }
     console.log(usuario)
-    setUsuarios([...usuarios, usuario])//*** */
+    setUsuarios([...usuarios, usuario]) //*** 
+
+    setInputNome('')
+    setInputIdade('')
   }
 
-  [{nome: 'Um', idade: '1'}], [{nome: 'Dois', idade: '2'}]
+  [{ nome: 'Um', idade: '1' }], [{ nome: 'Dois', idade: '2' }]
 
   return (
     <>
-      <h1 className='titulo'>Inputs controlados</h1>
+      <h1 className='titulo'>Inputs Controlados</h1>
 
       <div className="inputContainer">
         <label htmlFor="inpNome">Nome: </label>
@@ -58,14 +62,18 @@ function App() {
         <p>
           Idade digitada: {inputIdade}
         </p>
-        <p>
-          Usuarios:{usuarios.map((usuario, index) => (
-           <div key={index}>
-             <p>{usuario.nome}</p>
-             <p>{usuario.idade}</p>
-           </div>
+
+        <h2>Usuarios:</h2>
+
+        <div className="usuarios">
+         {usuarios.map((usuario) => (
+            <div key={usuario.id} className='usuario-container'>
+              <p>{usuario.nome}</p>
+              <p>{usuario.idade}</p>
+            </div>
           ))}
-        </p>
+
+        </div>
       </div>
 
     </>
