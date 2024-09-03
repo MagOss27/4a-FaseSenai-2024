@@ -1,5 +1,6 @@
 import Titulo from "../components/Titulo";
 import Carros from "../components/Carros";
+import './Portfolio.css';
 
 function Portfolio() {
 
@@ -32,11 +33,12 @@ function Portfolio() {
             <Titulo texto={"Portfólio"} emogi={"👾"} />
             <p>Estamos na página de portfólio</p>
 
-            {Carrinhos.map((Carro) => (
-                <Carros carro={Carro} key={Carro.id}/>
-                
-                ))}
+            <div className="carros">
+                {Carrinhos.map((Carro) => (
+                    <Carros carro={Carro} key={Carro.id} />
 
+                ))}
+            </div>
         </div>
     );
 }

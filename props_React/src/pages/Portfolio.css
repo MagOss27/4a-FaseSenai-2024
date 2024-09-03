@@ -1,0 +1,9 @@
+.carros{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
