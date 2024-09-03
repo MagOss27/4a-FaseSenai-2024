@@ -1,0 +1,9 @@
+:root {
+  --cor-background1: #0f627d;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
