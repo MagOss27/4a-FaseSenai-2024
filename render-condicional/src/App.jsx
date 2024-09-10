@@ -3,11 +3,14 @@ import AreaParaMaiores from './components/AreaParaMaiores';
 import EfetueLogin from './components/EfetueLogin';
 import UsuarioLogado from './components/UsuarioLogado';
 import { useState } from 'react';
+import Home from './pages/Home';
+import Viagens from './pages/Viagens';
 
 function App() {
 
   const [logado, setLogado] = useState(true);
   const [idade, setIdade] = useState(0);
+  const [pagina, setPagina] = useState(<Home />);
 
   // Função para diminuir a idade com verificação
   const diminuirIdade = () => {
@@ -20,6 +23,13 @@ function App() {
 
   return (
     <>
+
+      <div>
+        <button onClick={() => setPagina(<Home />)}> Home</button>
+        <button onClick={() => setPagina(<Viagens />)}> Viagens</button>
+      </div>
+      {pagina}
+
       {/* Condicional para exibir `UsuarioLogado` ou `EfetueLogin` */}
       <div className="cardRender">
         {logado ? <UsuarioLogado /> : <EfetueLogin />}
